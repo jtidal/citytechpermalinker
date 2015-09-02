@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proxy Linker</title>
+  <link href="signin.css" rel="stylesheet">
+    <!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="magic.js"></script>
+	
+
+	</script>
+	<style>
+	label.error { width: 250px; display: inline; color: red;}
+	</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Proxy Linker</h1>
+<form name="myform" id="myform" action="process2.php" class="form-horizontal" role="form" method="POST">  
+	  <div class="form-group">
+
+	    <div class="col-sm-10">
+    <label for="name" id="name_label" class="col-sm-2 control-label"></label>  
+    <input  onfocus="this.value='';" type="text" class="form-control" name="theAddie" id="theAddie" size="30" value="Paste URL or DOI"/>  
+</div>
+</div>
+	  <div class="form-group">
+	  <div class="col-sm-10">
+<div class="radio">
+  <label>
+    <input type="radio" name="RadioSelector" id="RadioSelector" value="url" checked>URL</label>
+
+	<label>
+	<input type="radio" name="RadioSelector" id="RadioSelector" value="doi">DOI</label>
+</div>
+</div>
+
+
+</div>
+
+<!-- The Submit button -->
+  <div class="form-group">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-default" name="submit" value="Submit">Submit</button>
+      <button type="reset" class="btn btn-default" name="reset" value="Clear">Clear</button>
+    </div>
+    </div>
+
+
+<div class="form-group">
+<div class="col-sm-10">
+   <div id="results"><div><!-- We will output the results from process.php here -->
+  </div>
+</div>
+</form>
+
+<div class="col-sm-10">
+<p>Examples:<br>10.1021/ac0354342<br>http://muse.jhu.edu/journals/american_imago/v069/...</p>
+<h2>What is this?</h2>
+<p>The proxy linker will create a URL to licensed articles.</p>
+<ul>
+<li>Create stable links to articles.</li>
+<li>Links will work on or off campus.</li>
+<li>Share links in Blackboard, reading lists, or social media.</li>
+</ul>
+</div>
+
+</div> <!-- container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
