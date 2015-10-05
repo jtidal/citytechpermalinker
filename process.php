@@ -4,7 +4,7 @@ function shortenTheAddie($MakeItShort){
 
   $username = 'YOURUSERNAME';
   $password = 'YOURPASSWORD';
-  $api_url =  'http://cityte.ch/yourls-api.php';
+  $api_url =  'http://yourlsSite.edu/yourls-api.php';
 
   // Init the CURL session
   $ch = curl_init();
